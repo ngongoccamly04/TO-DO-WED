@@ -46,7 +46,7 @@ exports.register = async (req, res) => {
     res.status(201).json({ message: "Đăng ký thành công! Hãy đăng nhập." })
   } catch (error) {
     console.error("❌ Lỗi Đăng Ký:", error)
-    res.status(500).json({ message: "Lỗi Server (Xem terminal)", error: error.message })
+    res.status(500).json({ message: "Lỗi Server", error: error.message })
   }
 }
 
